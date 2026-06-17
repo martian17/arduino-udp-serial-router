@@ -1,0 +1,11 @@
+[package]
+name = "keyboard-solenoid"
+version = "0.1.0"
+edition = "2024"
+
+
+[dependencies]
+serialport = "4.0"
+device_query = "1.1" # Used to detect raw key down/up states globally
+axum = "0.8.9"
+tokio = { version = "1.52.3", features = ["rt", "rt-multi-thread", "macros"] }
